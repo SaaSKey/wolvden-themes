@@ -54,7 +54,7 @@ form > .table-striped tbody tr:nth-of-type(even) {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #121212 !important;
+  border: none !important;
 }
 
 .breadcrumb-item.active {
@@ -73,10 +73,56 @@ form > .table-striped tbody tr:nth-of-type(even) {
   background-color: #121212;
 }
 
+.table-striped {
+  border: none !important;
+}
+
 .table-striped th > .floatright a  {
   color: #B5A6C9;
 }
 
+th > a {
+  color: #B5A6C9 !important;
+}
+
 .custom-control-label {
   color: #e2e2e2;
+}
+
+.flowers {
+  background-image: url('https://raw.githubusercontent.com/SaaSKey/wolvden-themes/master/dark-forest/hr.png') !important;
+}
+
+#footer {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.card-body .w-50:first-child div {
+  border: 1px solid #e2e2e2 !important;
+  border-radius: 50%;
+}
+
+.w-50 > a img {
+  border: 4px double #e2e2e2;
+  border-radius: 50%;
+}
+
+#header .navbar-main {
+  background-color: #121212;
+}
+
+#header .navbar-status {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+a.nav-link:hover {
+  color: #B5A6C9 !important;
+}
+
+i.fa {
+  color: inherit !important;
+}
+
+.nav-link:hover {
+  color: #B5A6C9 !important;
 }
