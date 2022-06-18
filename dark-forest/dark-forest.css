@@ -1,88 +1,127 @@
 /*
  * Dark Forest Theme v1.1
- * by SaaSKeyed/Nietscape(#73236)
+ * by SaaSKey/Nietscape(#73236)
  * do whatever you want with this file, I literally do not care.
 */ 
 
+/* This is where you import the font you want, i.e. from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
 
 body {
+    /* The background image of the page */
     background-image: url('https://images.unsplash.com/photo-1610922733246-318f73d956f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80');
-    font-family: 'Joan';
+    /* The font of everything but the buttons and main navigation */
+    font-family: 'Joan', serif;
 }
 
-#sidebar a, #main a, #header a {
+/* The font of the buttons and main navigation */
+#header .navbar-main, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* The color of all links on the page */
+#sidebar a, #main a, #header a, th > a, .table-striped th > .floatright a, .nav-link:hover, a.nav-link:hover {
     color: #B5A6C9 !important;
 }
 
-#header .navbar-main, button {
-    font-family: 'Roboto';
-}
-
-#header a:hover, .breadcrumb-item.active, .nav-tabs .nav-link.active, .custom-control-label, #main {
+/* The color of all regular text on the page */
+#header a:hover, .breadcrumb-item.active, .nav-tabs .nav-link.active, .custom-control-label, #main, #sidebar, .text-left {
     color: #e2e2e2 !important;
 }
 
+/* When you hover over the profile button, it changes to this color and opacity */
 a.nav-link:hover {
     background-color: rgba(0, 0, 0, 0.2)
 }
 
+/* The dark, non-transparent color used for things like the cave name bar and pack leader bar */
 .nav-tabs > .nav-item .active, .table th, #header .navbar-main {
     background-color: #121212;
 }
 
+/* Colors the den and profile tab area */
 .nav-tabs, .nav-tabs .nav-link.active, .nav-tabs .nav-link:hover {
     border-color: #121212;
 }
 
+/* Makes a lot of the existing layout completely transparent */
 #header > .breadcrumb-nav, #sidebar, #main, #footer, .table-striped tbody tr:nth-of-type(even) {
     background-color: rgba(0, 0, 0, 0);
 }
 
+/* The background color of all cards, and the border at the bottom */
 .card {
-    color: #e2e2e2 !important;
     background-color: rgba(0, 0, 0, 0.5) !important;
     border-bottom: 8px solid #3C907C !important;
 }
 
+/* Draws a small border around the cards */
+.card-body, .navbar.navbar-status.navbar-expand {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+/* The lighter color in the cave lists */
 form > .table-striped tbody tr:nth-of-type(odd), #header .navbar-status {
     background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
+/* The darker color in the cave lists */
 form > .table-striped tbody tr:nth-of-type(even) {
     background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
+/* Removes a white line at the bottom of wolf portraits in the cave list */
 .border-bottom, .table-striped {
     border: none !important;
 }
 
+/* The darker stripe in the pack leader info table */
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: rgba(0, 0, 0, 0.3) !important;
 }
 
-th > a, .table-striped th > .floatright a, .nav-link:hover, a.nav-link:hover {
-    color: #B5A6C9 !important;
-}
-
+/* The default tree branch Wolvden puts above the den options with the colors inverted */
 .flowers {
     background-image: url('https://raw.githubusercontent.com/SaaSKey/wolvden-themes/master/dark-forest/hr.png') !important;
 }
 
+/* The border of the featured wolf on the left sidebar */
 .card-body .w-50:first-child div {
     border: 1px solid #e2e2e2 !important;
-    border-radius: 50%;
 }
 
+/* The border of the pack leader on the left sidebar */
 .w-50 > a img {
     border: 4px double #e2e2e2;
     border-radius: 50%;
 }
 
+/* The next two are paired, and color the minus/plus sign next to the chat box. */
 i.fa {
     color: inherit !important;
 }
 
 i.fa-plus, i.fa-minus {
     color: #e2e2e2 !important;
+}
+
+/* The color of the text and border of all alerts */
+.alert {
+    color: #e2e2e2;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+/* The color of informational alerts */
+.alert-info {
+    background-color: rgb(5, 124, 179, 0.3);
+}
+
+/* The color of success alerts */
+.alert-success {
+    background-color: rgb(120, 166, 75, 0.3);
+}
+
+/* The color of the two linebreaks in den options */
+.custom-control > hr {
+    background-color: #3C907C !important;
 }
